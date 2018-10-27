@@ -25,3 +25,17 @@ function teht32() {
   alert('Lukusi neliöjuuri on ' + Math.sqrt(luku) + '.');
 }
 
+function teht33() {
+    let Avuosi = prompt('Mikä on aloitus vuosi?');
+    let Bvuosi = prompt('Mikä on lopetus vuosi?');
+    let Cvuosi = +Bvuosi + 1;
+    let erotus = +Cvuosi - +Avuosi;
+    
+    for (erotus >= 0; erotus--; Avuosi++){
+        if ((0 == Avuosi % 4) && (0 != Avuosi % 100) || (0 == Avuosi % 400)) {
+
+            alert(erotus + ' hei ' + Avuosi)
+        } 
+      
+    }
+}
