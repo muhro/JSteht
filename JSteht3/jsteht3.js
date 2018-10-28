@@ -25,3 +25,31 @@ function teht32() {
   alert('Lukusi neliöjuuri on ' + Math.sqrt(luku) + '.');
 }
 
+function teht33() {
+    let Avuosi = prompt('Mikä on aloitus vuosi?');
+    let Bvuosi = prompt('Mikä on lopetus vuosi?');
+    let Cvuosi = +Bvuosi + 1;
+    let erotus = +Cvuosi - +Avuosi;
+    
+    for (erotus >= 0; erotus--; Avuosi++){
+        if ((0 == Avuosi % 4) && (0 != Avuosi % 100) || (0 == Avuosi % 400)) {
+
+            alert('karkausvuodet valitsemallasi ajalla: ' + Avuosi)
+        } 
+      
+    }
+}
+function teht331(){
+  let alku, loppu, tulos;
+  alku = prompt("Anna aloitusvuosi:");
+  loppu = prompt("Anna loppuvuosi:");
+  for (alku; alku <= loppu; alku++) {
+    if ((alku % 4 == 0 && alku % 100 != 0) || alku % 400 == 0){
+      tulos = alku;
+      let node = document.createElement("LI");
+      let textnode = document.createTextNode(tulos);
+      node.appendChild(textnode);
+      document.getElementById("lista").appendChild(node);
+    }
+  }
+}
