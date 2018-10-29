@@ -27,12 +27,24 @@ function teht43() {
 
   let koira = [];
   let nimetmaara = 6;
-  let tulsotettava = koira.slice(-1);
 
   for ( i=0; i < nimetmaara; i++){
 
     koira.push( prompt('kerro koirien nimet'));
   }
   alert(koira.sort().reverse())
+}
+
+
+function teht44() {
+  let numerot = [];
+  let luku = prompt('Anna jokin luku');
+
+  while(luku < 0 || luku > 0){
+    numerot.push(luku);
+    luku = prompt('Anna uusi luku.');
+  }
+alert('luvut' + numerot.sort().reverse())
+
 }
 

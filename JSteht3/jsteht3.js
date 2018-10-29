@@ -34,11 +34,16 @@ function teht33() {
     for (erotus >= 0; erotus--; Avuosi++){
         if ((0 == Avuosi % 4) && (0 != Avuosi % 100) || (0 == Avuosi % 400)) {
 
+
             alert('karkausvuodet valitsemallasi ajalla: ' + Avuosi)
+
+            alert(erotus + ' hei ' + Avuosi)
+
         } 
       
     }
 }
+
 function teht331(){
   let alku, loppu, tulos;
   alku = prompt("Anna aloitusvuosi:");
@@ -53,3 +58,43 @@ function teht331(){
     }
   }
 }
+
+
+function teht34() {
+  let i, maara, heitto, summa = 0, txt;
+  alert('Heitetään noppaa ja tulostetaan summa');
+  maara = prompt('Montako noppaa heitetään?');
+  for (i = 0; i < maara; i++) {
+    heitto = Math.floor(Math.random() * 6) + 1;
+    summa += heitto;
+  }
+  txt = ('Noppien yhteissumma on: ' + summa);
+  document.getElementById('arpakuutiot').innerHTML = txt;
+}
+
+
+function teht35() {
+  let i, kokonaisluku, txt;
+  alert('Onko luku alkuluku.');
+  kokonaisluku = prompt('Anna kokonaisluku:');
+  if (+kokonaisluku === 2) {
+    txt = ('Kokonaisluku ' + kokonaisluku + ' on alkuluku');
+    document.getElementById('alkuluku').innerHTML = txt;
+  } else if (+kokonaisluku === 1) {
+    txt = ('Kokonaisluku ' + kokonaisluku + ' ei ole alkuluku');
+    document.getElementById('alkuluku').innerHTML = txt;
+  }
+  for (i = 2; i < kokonaisluku; i++) {
+    if (kokonaisluku % i === 0) {
+      txt = ('Kokonaisluku ' + kokonaisluku + ' ei ole alkuluku');
+      document.getElementById('alkuluku').innerHTML = txt;
+      break;
+    } else {
+      txt = ('Kokonaisluku ' + kokonaisluku + ' on alkuluku');
+      document.getElementById('alkuluku').innerHTML = txt;
+    }
+  }
+}
+
+
+
