@@ -1,6 +1,6 @@
 .hidden {
     display: none;
 }
-.nothidden {
+.visible {
     display: flex;
 }

@@ -24,7 +24,7 @@ function teht72() {
 // tehtävä 3
 function itseisarvo() {
   let arvo = prompt('anna luku');
-  
+
     let itse = Math.abs(+arvo);
     return (itse);
   }
