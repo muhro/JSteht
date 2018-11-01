@@ -48,3 +48,21 @@ alert('luvut' + numerot.sort().reverse())
 
 }
 
+function teht45() {
+  let array = [];
+  let koko = 1000, prompti, i, txt;
+  for (i = 0; i < koko; i++) {
+    prompti = prompt('Anna luku:');
+    if (prompt === null || prompti === '') {
+      txt = ('Peruutit söytön!');
+      document.getElementById('teksti').innerHTML = txt;
+      return;
+    } else if (array.includes(prompti)) {
+      alert('Luku on jo syötetty!');
+      return;
+    } else {
+      array.push(prompti);
+      console.log(array);
+    }
+  }
+}
