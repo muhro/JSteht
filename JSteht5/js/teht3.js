@@ -7,11 +7,13 @@ const kuvat = [
   'http://placekitten.com/331/240',
 ];
 
-  var holder = document.getElementById("kuva");
+
 
   for ( let i=0; i < kuvat.length; i+=1 ) {
 
-    holder.innerHTML += "<li><img src="+kuvat[i]+"></li><br>";
+    const lista = document.querySelector('ul');
+
+    lista.innerHTML += '<li><img src=' + kuvat[i] + '></li>';
 
   }
 }

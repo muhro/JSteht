@@ -9,8 +9,8 @@ function teht51() {
   document.getElementById(
       'osoite').innerHTML = '<td id="osoite">Konala </td></tr>';
 
-  const div = document.querySelector('#puhelinnumero');          // haetaan elementti, jonka id on esimerkki
-  const html =                                               // tehdään monirivinen merkkijono, huomaa backtick merkkijonon ympärillä (gravis)
+  const div = document.querySelector('#puhelinnumero');
+  const html =                                               
       ` <tr> <td id="puhelinnumero">Puhelinnumero</td><td id="numeroni"></td></tr>`;
   div.innerHTML = html;
   document.getElementById(
