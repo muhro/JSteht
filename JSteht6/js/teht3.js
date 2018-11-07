@@ -7,9 +7,9 @@ const submit = document.querySelector('input[name=submit]');
 const p = document.querySelector('p');
 
 document.getElementById("sum").addEventListener("click", A());
-document.getElementById("sum").addEventListener("sub", B());
-document.getElementById("sum").addEventListener("multi", C());
-document.getElementById("sum").addEventListener("div", D());
+document.getElementById("sub").addEventListener("click", B());
+document.getElementById("multi").addEventListener("click", C());
+document.getElementById("div").addEventListener("click", D());
 
 function A() {
   form.onsubmit = function(evt) {
