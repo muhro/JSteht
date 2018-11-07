@@ -6,6 +6,10 @@ const numero2 = document.querySelector('input[name=numero2]');
 const submit = document.querySelector('input[name=submit]');
 const p = document.querySelector('p');
 
+document.getElementById("sum").addEventListener("click", A());
+document.getElementById("sum").addEventListener("sub", B());
+document.getElementById("sum").addEventListener("multi", C());
+document.getElementById("sum").addEventListener("div", D());
 
 function A() {
   form.onsubmit = function(evt) {

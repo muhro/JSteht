@@ -62,3 +62,25 @@ function teht45() {
     }
   }
 }
+function teht46() {
+  let prompti = 1;
+  let array = [];
+  while (+prompti !== 0) {
+    prompti = prompt('Anna luku:');
+    array.push(prompti);
+  }
+  if (+prompti === 0 || prompti == null) {
+    array.splice(-1);
+    array.sort(function(a, b) {
+      return a - b;
+    });
+    if (array.length % 2 === 0) {
+      alert('Mediaani on: ' + (+array[array.length / 2] + +array[(array.length / 2) - 1]) / 2);
+
+
+    } else {
+      alert('Mediaani on: ' + +array[(array.length - 1) / 2]);
+
+    }
+  }
+}
