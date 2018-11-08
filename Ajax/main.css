@@ -1,0 +1,25 @@
+body {
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=cold-vehicles-water-531880.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+h1{
+    font-size: 5rem;
+    font-weight: bolder;
+}
+textarea{
+    resize: none;
+}
+button{
+
+}
+.site{
+    text-align: center;
+}
+.movies{
+    background: rgba(145, 164, 180, 0.47);
+}
+.movies2{
+   opacity: 1;
+}
