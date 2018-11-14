@@ -43,3 +43,14 @@ button{
     flex: 3;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+.grid-item {
+    font-size: 30px;
+    text-align: center;
+}
+
+
