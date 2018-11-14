@@ -6,9 +6,10 @@ function etsi () {
     console.log(series);
     const app = document.getElementById('app');
     app.innerHTML = series.map(({show}) => `
-            <div class="movies2 col gird-item " >
-            ${show.image ? `<img src="${show.image.medium}">` : ''}
-            <div>
+            <div class="movies2 col " >
+            ${show.image ? `<img src="${show.image.medium}">` : ' <img style="z-index: -1" src="noimage.png" >'}
+           
+                <div>
                <h5 >${show.name}</h5>
                     <h7>${show.url}</h7>
                     <h7>${show.genres}</h7>
@@ -22,5 +23,3 @@ function etsi () {
 
 const nappi = document.getElementById('nappi');
 nappi.addEventListener('click', etsi);
-
-
