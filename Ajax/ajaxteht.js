@@ -21,5 +21,6 @@ function etsi () {
   })
 }
 
+
 const nappi = document.getElementById('nappi');
 nappi.addEventListener('click', etsi);
